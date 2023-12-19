@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: rgba(243, 240, 77, 0.873);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Golde</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>What are Functional Mushrooms?</h2>
+      <h5>These funky-looking fungi have some promising health benefits, Dec 7, 2023</h5>
+      <img src="C:\Users\chikk\Downloads\Mov-Blog-Functional-Mushrooms.jpg" height="300px" width="90%"/>
+      <p>“Functional mushrooms are mushrooms that have adaptogenic properties and health benefits beyond that of their nutritional value,” explains Abbey Sharp, RD, registered dietitian, YouTube host, food writer, and TikTok creator.</p>
+    </div>
+    <div class="card">
+      <h2>Tips for Sensitive Stomach</h2>
+      <h5>Love eating, but struggling with a sensitive stomach?, Sep 2, 2023</h5>
+      <img src="C:\Users\chikk\Downloads\Cold_Brew_Rooftop_9.webp" height="300px" width="90%"/>
+      <p>Most people with a sensitive stomach can successfully manage it at home through some dietary and lifestyle adjustments.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="C:\Users\chikk\Downloads\kleon-photo-by-clayton-cubitt.jpg" height="150px" width="130px"/>
+      <p>Austin Kleon’s blog is the main focus of his author website. This makes his website feel fresh all the time because he literally posts almost every day! 
+
+        His books are also tastefully displayed in the sidebar. The longer you’re on his blog the more likely you are to check them out.
+        
+        What makes his blogs successful is that he links to other resources and encourages others to link to his site. His blog is one of the most respected in the author blogging field – so what he’s doing is definitely working.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <h4>Cristiano After Portugal's Elimination</h4>
+      <img src="C:\Users\chikk\Downloads\cristiano-ronaldo-pictures-bc9xghd8s9yni3r6.jpg" height="100px" width="90%"/>
+      <h4>Marvel drops Kang actor Jonathan Majors after guilty verdict in assault</h4>
+      <img src="C:\Users\chikk\Downloads\jonathan-majors-fired-kang.webp" height="100px" width="90%"/>
+      <h4>Amazon internship 2023</h4>
+      <img src="C:\Users\chikk\Downloads\island-photo-amazon-staten-jfk8-distribution-center_a0eeb580-304a-11eb-9f6e-b84f2c2b8c49_1687954837597.avif" height="100px" width="90%"/>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Austin_Kleon@insta<br>Austin_Kleon@facebook<br>Austin_Kleon@twitter</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Copyright@2023<br>Golde</h2>
+</div>
+
+</body>
+</html>
